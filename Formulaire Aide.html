@@ -1,0 +1,202 @@
+<!--STRUCTURE GENERAL-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"
+        description="Vous êtes une mère célibataire et vous rencontrez des difficultés? Rejoignez-nous, vous n’êtes plus seule !" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Au coeur des mamans : Rejoignez-nous</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/Style.css">
+</head>
+
+<body>
+
+    <header class="container-fluid fixed-top header">
+        <img src="./Assets/img/Img-header.jpeg" alt="logo">
+
+        <nav class="navbar navbar-expand-md navbar-light py-0 navDesign" aria-label="Toggle navigation">
+            <div class="container-fluid">
+                <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+
+                    <ul class="navbar-nav justify-content-around w-100">
+                        <li class="nav-item my-2">
+                            <a class="nav-link btn btn-outline-secondary button" aria-current="page"
+                                href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="nav-link btn btn-outline-secondary button" aria-current="page"
+                                href="Inscription.html">Inscription</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="nav-link btn btn-outline-secondary button" aria-current="page"
+                                href="Evenements.html">Evenements</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="nav-link btn btn-outline-secondary button" aria-current="page"
+                                href="Soutien.html">Soutenez-nous</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="nav-link btn btn-outline-secondary button" aria-current="page"
+                                href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--FIN STRUCTURE GENERALE-->
+
+    <main class="container-fluid">
+
+        <div class="container mt-5" id="infos">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Inscription</h1>
+                        <br>
+                        <form class="row" id="formBeneficiaire" method="POST" enctype="text/plain">
+                            <h3><u>Etat civil</u></h3>
+                            <div class="col-md-6">
+                                <label for="nomBeneficiaire" class="form-label">Nom</label>
+                                <input type="text" class="form-control" name="nomBeneficiaire" id="nomBeneficiaire">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="prenomBeneficiaire" class="form-label">Prenom</label>
+                                <input type="text" class="form-control" name="prenomBeneficiaire"
+                                    id="prenomBeneficiaire">
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <label for="dateNaissance" class="form-label">Date de naissance</label>
+                                <input type="date" class="form-control" name="dateNaissance" id="dateNaissance"
+                                    min="1930-01-01" max="2004-01-01" placeholder="yyyy-mm-dd" />
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <label for="lieuNaissance" class="form-label">Lieu de naissance</label>
+                                <input type="text" class="form-control" name="lieuNaissance" id="lieuNaissance">
+                            </div>
+                            <div class="col-4 mt-4 text-end">
+                                <label for="optSituation" class="form-label">Situation maritale</label>
+                            </div>
+                            <div class="col-8 mt-4">
+                                <input type="radio" name="optSituation" value="celibataire" checked>Célibataire
+                                <input type="radio" name="optSituation" value="mariee">Mariée
+                                <input type="radio" name="optSituation" value="separee">Séparée
+                                <input type="radio" name="optSituation" value="divorcee">Divorcée
+                                <input type="radio" name="optSituation" value="veuve">Veuve
+                            </div>
+                            <div class="container d-flex flex-md-row mt-3 mb-5">
+                                <label for="optSituation" class="form-label text-end label">Nombre d'enfants :</label>
+                                <select class="form-control select" name="nbEnfants" id="nbEnfants">
+                                    <option value="0">Sélectionnez une réponse</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <hr>
+                            <h3><b><u>Informations de contact</u></b></h3>
+                            <br><br>
+                            <div class="col-md-6">
+                                <label for="telBeneficiaire" class="form-label">Téléphone</label>
+                                <input type="text" class="form-control" name="telBeneficiaire" id="telBeneficiaire">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailBeneficiaire" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="emailBeneficiaire"
+                                    id="emailBeneficiaire">
+                            </div>
+                            <div class="col-md-12 mt-4">
+                                <label for="typeVoie" class="form-label">Adresse</label>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <select class="form-control" name="typeVoie" id="typeVoie">
+                                    <option value="0">Type de voie</option>
+                                    <option value="rue">Rue</option>
+                                    <option value="chemin">Chemin</option>
+                                    <option value="allee">Allée</option>
+                                    <option value="impasse">Impasse</option>
+                                </select>
+                            </div>
+                            <div class="col-8 mt-3">
+                                <input type="text" class="form-control" id="nomRue" name="nomRue"
+                                    placeholder="Nom de la voie" required>
+                            </div>
+
+                            <div class="col-4 mt-3 mb-5">
+                                <input type="text" class="form-control" id="numVoie" name="numVoie"
+                                    placeholder="Num voie" required>
+                            </div>
+                            <div class="col-4 mt-3 mb-5">
+                                <input type="text" class="form-control" id="codePostal" name="codePostal"
+                                    placeholder="Code postal" required>
+                            </div>
+                            <div class="col-4 mt-3 mb-5">
+                                <input type="text" class="form-control" id="ville" name="ville" placeholder="Ville"
+                                    required>
+                            </div>
+                            <hr>
+                            <h3><u>Vos ressources</u></h3>
+
+                            <div class="col-md-6 mt-3">
+                                <label for="situPro" class="form-label">Etes vous ?</label>
+                                <select class="form-control" name="situPro" id="situPro">
+                                    <option value="0">Selectionnez une reponse</option>
+                                    <option value="salariee">Salariée</option>
+                                    <option value="chomage">Au chomage</option>
+                                    <option value="etudiante">Etudiante</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mt-3 mb-3">
+                                <label for="ressources" class="form-label">Quels sont vos revenus mensuels ?</label>
+                                <select class="form-control" name="ressources" id="ressources">
+                                    <option value="0">Selectionnez une reponse</option>
+                                    <option value="Reponse 1">- de 5 000</option>
+                                    <option value="Reponse 2">Entre 5 000 et 7 000</option>
+                                    <option value="Reponse 3">Entre 7 000 et 10 000</option>
+                                    <option value="Reponse 4">+ de 10 000</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 mt-3 mb-5">
+                                <label for="optAides" class="form-label">Percevez-vous des aides sociales ?</label>
+                                <input type="radio" name="optAides" value="oui" checked>Oui
+                                <input type="radio" name="optAides" value="non">non
+                            </div>
+                            <br>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <button id="btnAddBeneficiaire" class="btn btn-primary btn-rounded buttonForm"
+                                    type="submit">Soumettre votre inscription</button>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid spacer"></div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./Assets/Script.js"></script>
+
+</body>
