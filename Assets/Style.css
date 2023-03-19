@@ -39,29 +39,68 @@ a {
 
 main {
     position: relative;
-    top: 275px;
+    top: 180px;
     padding: 1cm;
     background-color: rgb(146, 83, 95);
 }
 
 footer {
     position: relative;
-    bottom: -275px;
+    bottom: -180px;
     height: 85px;
     background-color: rgb(233, 150, 122);
     border: solid 1px rgb(100, 81, 81);
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:405px) and (max-width:494px) {
 
     main {
         position: relative;
-        top: 239px;
+        top: 205px;
     }
 
     footer {
         position: relative;
-        bottom: -239px;
+        bottom: -205px;
+    }
+}
+
+@media screen and (min-width:495px) and (max-width:600px) {
+
+    main {
+        position: relative;
+        top: 240px;
+    }
+
+    footer {
+        position: relative;
+        bottom: -240px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:720px) {
+
+    main {
+        position: relative;
+        top: 280px;
+    }
+
+    footer {
+        position: relative;
+        bottom: -280px;
+    }
+}
+
+@media screen and (min-width:721px) {
+
+    main {
+        position: relative;
+        top: 315px;
+    }
+
+    footer {
+        position: relative;
+        bottom: -315px;
     }
 }
 
